@@ -3,11 +3,11 @@
 <property name="result.dir" location="./target"/>
 <property name="result.javaclasses.dir" location="${result.dir}/classes"/>
 <path id="NecessaryLibraries">
-<pathelement location="./mylib/junit.jar"/>
-<!--matcher-->
-<pathelement location="./mylib/hamcrest-core-1.3.jar"/>
+<pathelement location="./myLib/junit.jar"/>
+<!--matcher- >
+<pathelement location="./myLib/hamcrest-core-1.3.jar"/>
 <!--<pathelement
-location="./mylib/selenium-server-standalone-3.8.1.jar"/>-->
+location="./myLib/selenium-server-standalone-3.8.1.jar"/>-->
 </path>
 <target name="compile">
 <mkdir dir="${result.javaclasses.dir}"/>
@@ -33,7 +33,5 @@ includeantruntime="false">
 </fileset>
 </batchtest>
 </junit>
-
 </target>
-
 </project>
