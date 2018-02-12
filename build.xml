@@ -4,8 +4,8 @@
 <property name="result.javaclasses.dir" location="${result.dir}/classes"/>
 <path id="NecessaryLibraries">
 <pathelement location="./myLib/junit.jar"/>
-<!--matcher
-<pathelement location="./myLib/hamcrest-core-1.3.jar"/>-->
+<!--matcher-->
+<pathelement location="./myLib/hamcrest-core-1.3.jar"/>
 <!--<pathelement
 location="./myLib/selenium-server-standalone-3.8.1.jar"/>-->
 </path>
@@ -29,7 +29,7 @@ includeantruntime="false">
 <formatter type="brief" usefile="false"/>
 <batchtest >
 <fileset dir="${result.javaclasses.dir}" >
-<include name="**/*Junit.class"/>
+<include name="**/*calctest.class"/>
 </fileset>
 </batchtest>
 </junit>
